@@ -17,7 +17,6 @@ async def start(update: Update, context):
     )
 
 # Функция для обработки VIN-номера
-"""
 async def handle_vin(update: Update, context):
     user_vin = update.message.text.strip().upper()
     user_id = update.effective_user.id
@@ -38,7 +37,7 @@ async def handle_vin(update: Update, context):
             "❌ VIN номер должен состоять из 17 символов.\n"
             "Пожалуйста, проверьте и отправьте снова.\n"
         )
-"""
+        
 # Главная функция
 def main():
     app = Application.builder().token(TOKEN).build()
