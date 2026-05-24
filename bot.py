@@ -13,7 +13,7 @@ TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 async def start(update: Update, context):
     await update.message.reply_text(
         "👋 Добрый день!\n"
-        "Отправьте VIN автомобиля (17 символов), и я сохраню его."
+        "Вы оставили заявку по автозапчастям. Укажите какую запчасть вы ищите и Ваш VIN или номер кузова полностью"
     )
 
 # Функция для обработки VIN-номера
